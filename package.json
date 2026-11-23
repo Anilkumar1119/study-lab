@@ -1,0 +1,40 @@
+{
+  "name": "study-lab-next",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "node --import tsx --test tests/*.test.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@electric-sql/pglite": "^0.5.16",
+    "@tailwindcss/postcss": "^4.3.5",
+    "@xyflow/react": "^12.12.1",
+    "bcryptjs": "^3.0.3",
+    "next": "^16.4.6",
+    "next-auth": "^5.0.0-beta.30",
+    "postgres": "^4.1.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-is": "^19.3.1",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.10.1",
+    "tailwindcss": "^4.3.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
