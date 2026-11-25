@@ -43,6 +43,5 @@ export default function Resources() {
     <section className="panel"><h2 className="mb-3 text-xl font-bold">Provider catalogs{last.topic ? ' for “'+last.topic+'”' : ''}</h2>
       <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">{sourceLinks(last.topic,last.type).map(source=><li key={source.name}><a className="block rounded-lg border border-slate-200 p-3 hover:bg-indigo-50" href={source.url ?? undefined} target="_blank" rel="noreferrer"><strong>{source.name}</strong><p className="text-sm text-slate-600">{source.label} ↗</p></a></li>)}</ul>
     </section>
-    <a className="text-indigo-800 underline" href="https://algebra-tutor-lab.bigzebu.chatgpt.site/#learn">Open the existing Study Lab lessons and quizzes</a>
   </div>;
 }
