@@ -1,6 +1,6 @@
 # Study Lab Next.js
 
-A subject-independent resource finder and teach-back workspace. Students explain what they learned, answer a follow-up question, and see their mastery and review dates. Teachers create a class and see aggregate concept scores for students who enroll using its code. The previous Study Lab lessons and Algebra Tutor remain accessible from the new navigation.
+A subject-independent resource finder and teach-back workspace. Students explain what they learned, answer a follow-up question, and see their mastery and review dates. Teachers create a class and see aggregate concept scores for students who enroll using its code.
 
 ## Run locally
 
@@ -27,7 +27,7 @@ Import this project with the Next.js preset and point its root directory at this
 | `TEACHER_INVITE_CODE` | Private code required when registering a teacher account |
 | `OPENALEX_API_KEY` | Optional key for a larger OpenAlex search budget |
 
-Apply `db/schema.sql` to the configured PostgreSQL database before serving sign-ups. The schema only defines the new app's tables and can be reapplied. It is already installed in the provisioned Neon project named `study-lab-next`. Copy the connection string directly from Neon to the hosting environment. The new accounts and teach-back records live in PostgreSQL. Existing Algebra Tutor accounts and mastery data remain in the legacy app.
+Apply `db/schema.sql` to the configured PostgreSQL database before serving sign-ups. The schema only defines the new app's tables and can be reapplied. It is already installed in the provisioned Neon project named `study-lab-next`. Copy the connection string directly from Neon to the hosting environment. The new accounts and teach-back records live in PostgreSQL.
 
 Browser dictation requires a browser with Speech Recognition and microphone permission. The read-aloud button uses browser Speech Synthesis. The mobile camera control uses the browser's capture input. Typed input and file upload are also available. Images are sent to Claude when grading is enabled and the binary files are discarded after analysis. Feedback, explanations and mastery are saved. Configure object storage only if you decide that image retention is needed.
 
